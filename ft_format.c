@@ -6,7 +6,7 @@
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 11:47:19 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/09 15:02:47 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/11/14 15:59:15 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,5 @@ void	ft_format(char spec, va_list arg, int *l)
 	else if (spec == 'X')
 		ft_hexa_upper(va_arg(arg, unsigned int), l);
 	else if (spec == '%')
-		ft_putstr("%", l);
+		ft_putchar('%', l);
 }

@@ -6,7 +6,7 @@
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 11:42:19 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/09 12:12:00 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/11/16 14:53:19 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdarg.h>
 # include <unistd.h>
 # include <stdio.h>
+// #include <fcntl.h>
 
 void	ft_format(char spec, va_list arg, int *l);
 void	ft_putstr(char *st, int *l);
