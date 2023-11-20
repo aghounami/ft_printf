@@ -6,7 +6,7 @@
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 11:41:20 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/16 15:31:21 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/11/20 11:23:46 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,11 @@ int	ft_printf(const char *s, ...)
 		return (-1);
 	while (s[i])
 	{
-		if (s[i] == '%' && s[i + 1])
+		if (s[i] == '%')
 		{
 			i++;
+			if(s[i] == '\0')
+				break ;
 			ft_format(s[i], arg, &l);
 		}
 		else
@@ -39,15 +41,12 @@ int	ft_printf(const char *s, ...)
 }
 // int main()
 // {
-// // 	char str[] = "world";
-// // 	char *ch;
-// // 	int re = ft_printf("\nhello %s %d %p %d %u %x %X %% ", str, 2, ch, 88, 9, 64, 64);
-// // 	// printf("%ld\n", n);
-// // 	int l =printf("\nhello %s% d %p %d %u %x %X %% ", str, 2, ch, 88, , 64, 64);
-// // 	printf("\n%d %d", re, l);
-// // 	// printf("%%%%%\n");
-// // 	//ft_printf("%v");
-// // 	// ft_printf("%%%%%\n");
-// ft_printf("hello \n%u\n", 	65536);
-// printf("hello \n%u\n", 	65536);
+// 	char str[] = "world";
+// 	char *ch;
+// 	// int re = ft_printf("\nhello %s %d %p %d %u %x %X %% ", str, 2, ch, 88, 9, 64, 64);
+// 	// // printf("%ld\n", n);
+// 	// int l =printf("\nhello %s% d %p %d %u %x %X %% ", str, 2, ch, 88, , 64, 64);
+// 	// printf("\n%d %d", re, l);                      
+// 	int re = ft_printf("%%m%a");
+// 	// ft_printf("%d", re);      
 // }
