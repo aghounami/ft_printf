@@ -6,13 +6,13 @@
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 11:41:20 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/20 11:23:46 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/11/28 19:16:56 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_printf(const char *s, ...)
+int	ft_printf(const char *str, const char *s, ...)
 {
 	va_list	arg;
 	int		l;
@@ -28,7 +28,7 @@ int	ft_printf(const char *s, ...)
 		if (s[i] == '%')
 		{
 			i++;
-			if(s[i] == '\0')
+			if (s[i] == '\0')
 				break ;
 			ft_format(s[i], arg, &l);
 		}
@@ -39,14 +39,3 @@ int	ft_printf(const char *s, ...)
 	va_end(arg);
 	return (l);
 }
-// int main()
-// {
-// 	char str[] = "world";
-// 	char *ch;
-// 	// int re = ft_printf("\nhello %s %d %p %d %u %x %X %% ", str, 2, ch, 88, 9, 64, 64);
-// 	// // printf("%ld\n", n);
-// 	// int l =printf("\nhello %s% d %p %d %u %x %X %% ", str, 2, ch, 88, , 64, 64);
-// 	// printf("\n%d %d", re, l);                      
-// 	int re = ft_printf("%%m%a");
-// 	// ft_printf("%d", re);      
-// }
