@@ -47,8 +47,8 @@ int ft_printf(const char *, ...);
 - %x: Prints a number in hexadecimal (base 16) lowercase format.
 - %X: Prints a number in hexadecimal (base 16) uppercase format.
 - %%: Prints a percent sign.
-Bonus Part
-Bonus List
+# Bonus Part
+# Bonus List
 Manage any combination of the flags: '-', '0', and the field minimum width under all conversions.
 Manage all the following flags: '#', '+', and space.
 If you plan to complete the bonus part, consider the implementation of your extra features from the start. The bonus part will only be assessed if the mandatory part is perfect.
