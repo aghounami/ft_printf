@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/09 11:42:19 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/28 19:17:39 by aghounam         ###   ########.fr       */
+/*   Created: 2023/11/30 14:43:16 by aghounam          #+#    #+#             */
+/*   Updated: 2023/12/10 17:45:00 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,11 @@
 
 # include <stdarg.h>
 # include <unistd.h>
-# include <stdlib.h>
-# include <stdio.h>
 
 void	ft_format(char spec, va_list arg, int *l);
 void	ft_putstr(char *st, int *l);
 void	ft_putchar(char c, int *l);
-int		ft_printf(const char *str, const char *s, ...);
+int		ft_printf(const char *s, ...);
 void	ft_hexa_adress(unsigned long src, int *l);
 void	ft_putnbr(int n, int *l);
 void	ft_putpositive(unsigned int nb, int *l);

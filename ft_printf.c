@@ -6,13 +6,13 @@
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 11:41:20 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/28 19:16:56 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/12/10 16:26:31 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_printf(const char *str, const char *s, ...)
+int	ft_printf(const char *s, ...)
 {
 	va_list	arg;
 	int		l;
